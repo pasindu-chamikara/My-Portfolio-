@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Pasindu Gunasekara - Web Developer & UI Enthusiast from Colombo, Sri Lanka. Building modern, user-friendly web applications."/>
+  <title>Pasindu Gunasekara • Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <header id="home">
+    <nav class="navbar">
+      <div class="logo">Pasindu Gunasekara</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <div class="profile-container">
+          <img src="profile2.png" alt="Pasindu Gunasekara" class="profile-photo" loading="lazy"/>
+        </div>
+        <div class="hero-text">
+          <h1>Hello, I'm <span>Pasindu Gunasekara</span></h1>
+          <p class="tagline"><span class="role-cycle" id="roleText">I'm Building the Future</span></p>
+          <div class="hero-buttons">
+            <a href="PASINDU.pdf" download class="btn primary">Download CV <i class="fas fa-download"></i></a>
+            <a href="#contact" class="btn outline">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- About – updated with your text -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>I’m a Y2S2 undergraduate at <strong>Sri Lanka Institute of Information Technology (SLIIT)</strong> passionate about web development and UI design.</p>
+        <p>I enjoy building clean, responsive, and user-friendly web applications.</p>
+        <p>My focus is on writing efficient code and creating smooth digital experiences.</p>
+        <p>Currently, I’m seeking an internship opportunity to begin my professional career.</p>
+        <p>I’m driven by continuous learning and a strong desire to grow in the tech industry.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <span>HTML & CSS</span>
+          <div class="progress-bar"><div style="width:90%"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress-bar"><div style="width:80%"></div></div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="progress-bar"><div style="width:65%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Python</span>
+          <div class="progress-bar"><div style="width:60%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Java / Spring Boot</span>
+          <div class="progress-bar"><div style="width:55%"></div></div>
+        </div>
+        <div class="skill">
+          <span>UI/UX Design</span>
+          <div class="progress-bar"><div style="width:55%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects – one by one full-width layout -->
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="projects-list">
+
+        <div class="project-item">
+          <div class="project-image">
+            <img src="financetracker.jpg" alt="Smart Finance Tracker Dashboard" loading="lazy"/>
+          </div>
+          <div class="project-details">
+            <h3>Smart Finance Tracker</h3>
+            <div class="tech-badges">
+              <span class="badge">JavaScript</span>
+              <span class="badge">React</span>
+              <span class="badge">Vercel</span>
+            </div>
+            <p>A modern personal finance web app to track income & expenses, set realistic budgets, monitor savings goals, and generate clear monthly financial summaries. Built with a focus on usability and clean design.</p>
+            <a href="https://finance-tracker-web-zeta.vercel.app" target="_blank" class="btn primary">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-image">
+            <img src="joyride.jpg" alt="Joy Ride - Bike Rental & Ride Sharing Platform" loading="lazy"/>
+          </div>
+          <div class="project-details">
+            <h3>Bike Rental & Ride Sharing Platform (Joy Ride)</h3>
+            <div class="tech-badges">
+              <span class="badge">HTML/CSS/JS</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">MySQL</span>
+            </div>
+            <p>A comprehensive web-based bike rental and ride-sharing system for seamless bike booking and ride management, developed for SLIIT project group 2025-Y1-S2.</p>
+            <a href="https://github.com/pasindu-chamikara/Joy-ride-.git" target="_blank" class="btn primary">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-image">
+            <img src="goldenpalm.jpg" alt="Golden Palm Resort Hotel Booking System" loading="lazy"/>
+          </div>
+          <div class="project-details">
+            <h3>Hotel Booking System (Golden Palm Resort)</h3>
+            <div class="tech-badges">
+              <span class="badge">Java</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">MySQL</span>
+            </div>
+            <p>A comprehensive web-based hotel reservation system for special events, built for SLIIT project group 2025-Y2-S1-MLB-B1G2-02.</p>
+            <a href="https://github.com/pasindu-chamikara/Golden-palm-resort.git" target="_blank" class="btn primary">View on GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact – fully centered -->
+    <section id="contact" class="section">
+      <h2>Let's Connect</h2>
+      <div class="contact-content centered-contact">
+        <p class="intro-text">
+          I'm currently open to new opportunities, freelance projects, or interesting collaborations.<br>
+          Feel free to reach out!
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/pasindu-gunasekara-5a4920397" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/pasindu-chamikara" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:chamikarapasindu367@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="email">chamikarapasindu367@gmail.com</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Pasindu Gunasekara • Built in Colombo with passion & clean code</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
