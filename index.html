@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Pasindu Gunasekara - Web Developer & UI Enthusiast from Colombo, Sri Lanka. Building modern, user-friendly web applications." />
+  <title>Pasindu Gunasekara • Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor-dot"></div>
+  <div id="custom-cursor-glow"></div>
+
+  <!-- Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <header id="home">
+    <nav class="navbar">
+      <div class="logo">Pasindu<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-text" data-reveal="fade-right">
+          <span class="welcome-tag">Available for Internships</span>
+          <h1>Hello, I'm <br><span class="gradient-text">Pasindu Gunasekara</span></h1>
+          <p class="tagline"><span class="role-cycle" id="roleText">I'm Building the Future</span></p>
+          <div class="hero-buttons">
+            <a href="PASINDU.pdf" download class="btn primary magnetic-btn">Download CV <i
+                class="fas fa-download"></i></a>
+            <a href="#contact" class="btn outline magnetic-btn">Get in Touch</a>
+          </div>
+          <div class="hero-highlights" data-reveal="fade-up" data-delay="150">
+            <div class="highlight-chip">
+              <span class="highlight-value">UI</span>
+              <span class="highlight-label">Motion-first</span>
+            </div>
+            <div class="highlight-chip">
+              <span class="highlight-value">Full Stack</span>
+              <span class="highlight-label">Modern builds</span>
+            </div>
+            <div class="highlight-chip">
+              <span class="highlight-value">Sri Lanka</span>
+              <span class="highlight-label">Based in Colombo</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile-container" data-reveal="fade-left">
+          <div class="profile-glow"></div>
+          <div class="floating-badge floating-badge-top">
+            <i class="fas fa-sparkles"></i>
+            <span>Interactive UI</span>
+          </div>
+          <div class="profile-emoji" id="profile-emoji">🚀</div>
+          <img src="profile4.JPEG" alt="Pasindu Gunasekara" class="profile-photo" loading="lazy" />
+          <div class="floating-badge floating-badge-bottom">
+            <i class="fas fa-arrow-up-right-dots"></i>
+            <span>Available now</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down-wrapper" data-reveal="fade-up" data-delay="300">
+        <a href="#about" class="scroll-down-btn" aria-label="Scroll down to About section">
+          <span class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll Down</span>
+          <span class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Bento Grid Section (About & Skills) -->
+    <section id="about" class="section">
+      <h2 data-reveal="fade-up">About & Expertise</h2>
+      <div class="bento-grid">
+
+        <!-- Card 1: Main Bio (Large) -->
+        <div class="bento-card bento-bio" data-reveal="fade-up">
+          <div class="bento-card-inner">
+            <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
+            <h3>Who I Am</h3>
+            <p>I’m a <strong>Y3S1 IT undergraduate</strong> at the <strong>Sri Lanka Institute of Information Technology
+                (SLIIT)</strong>.</p>
+            <p>Passionate about crafting pixel-perfect, highly interactive frontends and solid backends, I thrive on
+              turning complex problems into elegant digital solutions.</p>
+            <p class="status-text"><span class="pulse-dot"></span> Actively seeking internship opportunities.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Tech Stack (Medium) -->
+        <div class="bento-card bento-skills" data-reveal="fade-up" data-delay="100">
+          <div class="bento-card-inner">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>My Stack</h3>
+            <div class="tech-tags">
+              <span class="tech-tag tech-html"><i class="fab fa-html5"></i> HTML/CSS</span>
+              <span class="tech-tag tech-js"><i class="fab fa-js-square"></i> JavaScript</span>
+              <span class="tech-tag tech-react"><i class="fab fa-react"></i> React</span>
+              <span class="tech-tag tech-python"><i class="fab fa-python"></i> Python</span>
+              <span class="tech-tag tech-spring"><i class="fas fa-leaf"></i> Spring Boot</span>
+              <span class="tech-tag tech-mysql"><i class="fas fa-database"></i> MySQL</span>
+              <span class="tech-tag tech-mongodb"><i class="fas fa-leaf"></i> MongoDB</span>
+              <span class="tech-tag tech-java"><i class="fab fa-java"></i> Java</span>
+              <span class="tech-tag tech-design"><i class="fas fa-pencil-ruler"></i> UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Location / Clock (Small) -->
+        <div class="bento-card bento-location" data-reveal="fade-up" data-delay="200">
+          <div class="bento-card-inner">
+            <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Location</h3>
+            <p class="location-name">Colombo, Sri Lanka</p>
+            <div id="local-clock" class="clock-display">00:00:00 PM</div>
+          </div>
+        </div>
+
+        <!-- Card 4: Education (Medium) -->
+        <div class="bento-card bento-education" data-reveal="fade-up" data-delay="150">
+          <div class="bento-card-inner">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <div class="edu-item">
+              <h4>BSc (Hons) in Information Technology</h4>
+              <p class="edu-inst">Sri Lanka Institute of Information Technology (SLIIT)</p>
+              <span class="edu-badge">3rd Year (Semester 1)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Core Philosophy / Strengths (Small/Medium) -->
+        <div class="bento-card bento-strengths" data-reveal="fade-up" data-delay="250">
+          <div class="bento-card-inner">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>My Approach</h3>
+            <ul class="strength-list">
+              <li><i class="fas fa-bolt"></i> Speed & Efficiency</li>
+              <li><i class="fas fa-lightbulb"></i> Continuous Learning</li>
+              <li><i class="fas fa-users"></i> Collaborative Mindset</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects – 3-in-a-row grid layout -->
+    <section id="projects" class="section">
+      <h2 data-reveal="fade-up">Featured Projects</h2>
+      <div class="projects-list">
+
+        <div class="project-item" data-reveal="fade-up">
+          <div class="project-image">
+            <img src="financetracker.jpg" alt="Smart Finance Tracker Dashboard" loading="lazy" />
+          </div>
+          <div class="project-details">
+            <h3>Smart Finance Tracker</h3>
+            <div class="tech-badges">
+              <span class="badge">JavaScript</span>
+              <span class="badge">React</span>
+              <span class="badge">Vercel</span>
+            </div>
+            <p>A modern personal finance web app to track income & expenses, set realistic budgets, monitor savings
+              goals, and generate clear monthly financial summaries. Built with a focus on usability and clean design.
+            </p>
+            <a href="https://finance-tracker-web-zeta.vercel.app" target="_blank" rel="noopener noreferrer"
+              class="btn primary magnetic-btn">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-item" data-reveal="fade-up">
+          <div class="project-image">
+            <img src="joyride.jpg" alt="Joy Ride - Bike Rental & Ride Sharing Platform" loading="lazy" />
+          </div>
+          <div class="project-details">
+            <h3>Bike Rental & Ride Sharing Platform (Joy Ride)</h3>
+            <div class="tech-badges">
+              <span class="badge">HTML/CSS/JS</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">MySQL</span>
+            </div>
+            <p>A comprehensive web-based bike rental and ride-sharing system for seamless bike booking and ride
+              management, developed for SLIIT project group 2025-Y1-S2.</p>
+            <a href="https://github.com/pasindu-chamikara/Joy-ride-.git" target="_blank" rel="noopener noreferrer"
+              class="btn primary magnetic-btn">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-item" data-reveal="fade-up">
+          <div class="project-image">
+            <img src="goldenpalm.jpg" alt="Golden Palm Resort Hotel Booking System" loading="lazy" />
+          </div>
+          <div class="project-details">
+            <h3>Hotel Booking System (Golden Palm Resort)</h3>
+            <div class="tech-badges">
+              <span class="badge">Java</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">MySQL</span>
+            </div>
+            <p>A comprehensive web-based hotel reservation system for special events, built for SLIIT project group
+              2025-Y2-S1-MLB-B1G2-02.</p>
+            <a href="https://github.com/pasindu-chamikara/Golden-palm-resort.git" target="_blank"
+              rel="noopener noreferrer" class="btn primary magnetic-btn">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-item" data-reveal="fade-up">
+          <div class="project-image">
+            <img src="nanasa.png" alt="නැනස Learning Management System" loading="lazy" />
+          </div>
+          <div class="project-details">
+            <h3>නැනස Learning Management System</h3>
+            <div class="tech-badges">
+              <span class="badge">MongoDB</span>
+              <span class="badge">Express</span>
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+            </div>
+            <p>A comprehensive MERN-stack Learning Management System (LMS) designed to facilitate seamless online education, course delivery, grading, and student-teacher interactions.</p>
+            <a href="https://github.com/pasindu-chamikara/NANASA-Learning-Management-System.git" target="_blank"
+              rel="noopener noreferrer" class="btn primary magnetic-btn">View on GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact – fully centered -->
+    <section id="contact" class="section">
+      <h2 data-reveal="fade-up">Let's Connect</h2>
+      <div class="contact-card" data-reveal="fade-up">
+        <div class="contact-content centered-contact">
+          <p class="intro-text">
+            I'm currently open to new opportunities, freelance projects, or interesting collaborations. Feel free to
+            reach out!
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/pasindu-gunasekara-5a4920397" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn" class="social-icon magnetic-btn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/pasindu-chamikara" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+              class="social-icon magnetic-btn">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:chamikarapasindu367@gmail.com" aria-label="Email" class="social-icon magnetic-btn">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <a href="mailto:chamikarapasindu367@gmail.com" class="email-cta">chamikarapasindu367@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Pasindu Gunasekara • Built in Colombo with passion & clean code</p>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
